@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>085773009666 Ahlinya Laundry di Sokaraja Purwokerto Banyumas</title>
+    <meta name="description" content="Laundry kiloan dan satuan di Banyumas meliputi Sokaraja, Purwokerto, dan seluruh wilayah Banyumas. Gratis antar jemput, bersih, rapi, dan wangi.">
+    <meta name="author" content="Persabunan">
+    <link rel="icon" href="https://raw.githubusercontent.com/bandardeterjen/index.html/refs/heads/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+        }
+        .bg-primary {
+            background-color: #29ABE2;
+        }
+        .bg-primary-dark {
+            background-color: #0071BC;
+        }
+        .text-primary {
+            color: #29ABE2;
+        }
+        .text-primary-dark {
+            color: #0071BC;
+        }
+        .border-primary {
+            border-color: #29ABE2;
+        }
+        .hover-bg-primary:hover {
+            background-color: #29ABE2;
+            color: #fff;
+        }
+        .hover-text-primary:hover {
+            color: #29ABE2;
+        }
+        .btn-primary-custom {
+            background-color: #29ABE2;
+            color: #fff;
+            padding: 10px 35px;
+            font-weight: 700;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary-custom:hover {
+            background-color: #FBA301;
+            color: #fff;
+        }
+
+        /* Animation Loader */
+        #loader-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #loader {
+            width: 80px;
+            height: 80px;
+            background-image: url('https://raw.githubusercontent.com/bandardeterjen/index.html/refs/heads/images/favicon.ico');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        /* Price Table Styling */
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+        .price-table th {
+            background-color: #29ABE2;
+            color: #fff;
+            padding: 12px 15px;
+            text-align: left;
+            font-weight: 700;
+        }
+        .price-table td {
+            padding: 10px 15px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .price-table tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+
+        /* FAQ Accordion */
+        .faq-question {
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+        .faq-question:hover {
+            background-color: #f3f4f6;
+        }
+        .faq-question .fa-chevron-down {
+            transition: transform 0.3s ease;
+        }
+        .faq-question.active .fa-chevron-down {
+            transform: rotate(180deg);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            padding: 0 20px;
+        }
+        .faq-answer.open {
+            max-height: 300px;
+            padding: 15px 20px;
+        }
+
+        /* WhatsApp Floater */
+        .wa-floater {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 99999;
+        }
+        .wa-btn {
+            background: #25D366;
+            color: #fff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            cursor: pointer;
+            transition: transform 0.2s;
+            font-size: 30px;
+            border: none;
+        }
+        .wa-btn:hover {
+            transform: scale(1.05);
+        }
+        .wa-panel {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            width: 350px;
+            max-width: 85vw;
+            display: none;
+            margin-bottom: 15px;
+            border: 1px solid #e2e8f0;
+            overflow: hidden;
+        }
+
+        /* Area Layanan Modal */
+        .area-modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.6);
+            z-index: 9999998;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .area-modal-overlay.active {
+            display: flex;
+        }
+        .area-modal {
+            background: #fff;
+            border-radius: 16px;
+            max-width: 600px;
+            width: 100%;
+            max-height: 80vh;
+            overflow-y: auto;
+            padding: 30px;
+            position: relative;
+            animation: modalIn 0.3s ease;
+        }
+        @keyframes modalIn {
+            from {
+                transform: translateY(-30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        .area-modal .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #999;
+            transition: color 0.3s;
+        }
+        .area-modal .close-btn:hover {
+            color: #333;
+        }
+        .area-modal h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0071BC;
+            margin-bottom: 10px;
+        }
+        .area-modal .area-image {
+            width: 100%;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+        .area-modal .area-description {
+            color: #555;
+            line-height: 1.8;
+            font-size: 0.95rem;
+        }
+        .area-modal .area-contact {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #e5e7eb;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .area-modal .area-contact a {
+            background: #29ABE2;
+            color: #fff;
+            padding: 8px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .area-modal .area-contact a:hover {
+            background: #FBA301;
+        }
+
+        .area-link {
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        .area-link:hover {
+            color: #FBA301 !important;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .hero-text {
+                font-size: 1.8rem !important;
+            }
+            .wa-panel {
+                width: 300px;
+            }
+            .area-modal {
+                padding: 20px;
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+    </div>
+
+    <!-- Top Bar -->
+    <div class="bg-primary text-white text-sm py-2 hidden md:block">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex gap-6">
+                <span><i class="fab fa-whatsapp mr-2"></i> Whatsapp 085773009666</span>
+                <span><i class="far fa-envelope mr-2"></i> <a href="mailto:bandardeterjen@gmail.com" class="hover:text-yellow-300">bandardeterjen@gmail.com</a></span>
+            </div>
+            <div class="flex gap-4">
+                <a href="https://www.facebook.com/bandardeterjen" target="_blank" class="hover:text-yellow-300"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/bandardeterjen" target="_blank" class="hover:text-yellow-300"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/bandardeterjen" target="_blank" class="hover:text-yellow-300"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center">
+                <img src="https://raw.githubusercontent.com/bandardeterjen/banyumas/refs/heads/images/bd-banyumas-tr.png" alt="Bandar Deterjen" class="h-12 md:h-16">
+            </a>
+            <button id="nav-toggle" class="text-2xl text-primary md:hidden focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul id="nav-menu" class="hidden md:flex gap-8 font-semibold text-gray-700">
+                <li><a href="#home" class="hover:text-primary">Beranda</a></li>
+                <li><a href="#about" class="hover:text-primary">Tentang</a></li>
+                <li><a href="#services" class="hover:text-primary">Layanan</a></li>
+                <li><a href="#pricing" class="hover:text-primary">Harga</a></li>
+                <li><a href="#faq" class="hover:text-primary">FAQ</a></li>
+                <li><a href="#contact" class="hover:text-primary">Kontak</a></li>
+            </ul>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 py-4 px-4">
+            <ul class="flex flex-col gap-3 font-semibold text-gray-700">
+                <li><a href="#home" class="block hover:text-primary">Beranda</a></li>
+                <li><a href="#about" class="block hover:text-primary">Tentang</a></li>
+                <li><a href="#services" class="block hover:text-primary">Layanan</a></li>
+                <li><a href="#pricing" class="block hover:text-primary">Harga</a></li>
+                <li><a href="#faq" class="block hover:text-primary">FAQ</a></li>
+                <li><a href="#contact" class="block hover:text-primary">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-gradient-to-r from-primary to-primary-dark text-white min-h-[500px] flex items-center">
+        <div class="absolute inset-0 opacity-20 bg-cover bg-center" style="background-image: url('https://raw.githubusercontent.com/bandardeterjen/banyumas/refs/heads/images/bd-banyumas-header.jpg');"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-2xl">
+                <h1 class="hero-text text-4xl md:text-5xl font-extrabold leading-tight">Ahlinya Laundry Di Provinsi Banyumasan</h1>
+                <p class="text-lg mt-4 opacity-90">Laundry kiloan & satuan gratis antar jemput se-Banyumas. Bersih, rapi, dan wangi!</p>
+                <a href="#contact" class="inline-block mt-6 bg-white text-primary font-bold py-3 px-10 rounded hover:bg-yellow-400 hover:text-white transition duration-300">Order Sekarang</a>
+            </div>
+        </div>
+
+        <!-- Work Info -->
+        <div class="absolute bottom-0 left-0 w-full hidden md:block">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-wrap -mx-2">
+                    <div class="w-full md:w-1/3 px-2">
+                        <div class="bg-blue-400 p-4 flex items-center gap-4">
+                            <i class="fab fa-whatsapp text-3xl"></i>
+                            <div>
+                                <div id="greeting-message" class="font-semibold">Selamat pagi, bisa dibantu?</div>
+                                <div class="text-xl font-bold">085773009666</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/3 px-2">
+                        <div class="bg-primary p-4 flex items-center gap-4">
+                            <i class="far fa-clock text-3xl"></i>
+                            <div>
+                                <div class="font-semibold">Kami buka tiap hari</div>
+                                <div class="text-xl font-bold">Senin - Sabtu 08.00 - 17.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/3 px-2">
+                        <div class="bg-primary-dark p-4 flex items-center gap-4">
+                            <i class="far fa-envelope text-3xl"></i>
+                            <div>
+                                <div class="font-semibold">Perlu kerjasama?</div>
+                                <div class="text-xl font-bold"><a href="mailto:bandardeterjen@gmail.com" class="hover:text-yellow-300">bandardeterjen@gmail.com</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary-dark">Laundry kiloan dan satuan di Sokaraja dan Purwokerto</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto mt-4">Kami melayani jasa laundry baik kiloan maupun satuan gratis antar jemput meliputi area Sokaraja, Purwokerto, Ajibarang, Baturaden, Cilongok, Gumelar, Kalibagor, Karanglewas, Kebasen, Kedung Banteng, Kembaran, Kemrinjen, Jatilawang, Lumbir, Patikraja, Pekuncen, Purwojati, Rawalo, Somagede, Sumbang, Sumpiuh, Tambak, dan Wangon. Cukup angkat telpon atau WA 085773009666, cucian Anda beres!</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white text-3xl mx-auto mb-4"><i class="fas fa-bolt"></i></div>
+                    <h4 class="text-xl font-bold">Ahli Laundry</h4>
+                    <p class="text-gray-600 mt-2">Kami sudah berpengalaman bergerak di bidang laundry dan kimia pembersih di Jakarta.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white text-3xl mx-auto mb-4"><i class="fas fa-money-bill-wave"></i></div>
+                    <h4 class="text-xl font-bold">Harga Bersahabat</h4>
+                    <p class="text-gray-600 mt-2">Tarif yang ramah kantong dengan laundry berlangganan keuntungannya berlipat.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white text-3xl mx-auto mb-4"><i class="fas fa-truck"></i></div>
+                    <h4 class="text-xl font-bold">Layanan Ekspres</h4>
+                    <p class="text-gray-600 mt-2">Kami menawarkan 2 jam laundry Anda selesai dan bisa ditunggu atau kami antar.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white text-3xl mx-auto mb-4"><i class="fas fa-leaf"></i></div>
+                    <h4 class="text-xl font-bold">Ramah Lingkungan</h4>
+                    <p class="text-gray-600 mt-2">Kami menggunakan deterjen dan parfum laundry ramah lingkungan buatan kami sendiri.</p>
+                </div>
+            </div>
+
+            <!-- Why Choose Us -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+                <div class="bg-white p-8 rounded-lg shadow-md text-center service-card">
+                    <div class="text-primary text-5xl mb-4"><i class="fas fa-tshirt"></i></div>
+                    <h4 class="text-xl font-bold">BERSIH</h4>
+                    <p class="text-gray-600 mt-2">Pakaian Anda kami bersihkan dengan benar sesuai prosedur yang berlaku dengan deterjen laundry ramah lingkungan.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md text-center service-card">
+                    <div class="text-primary text-5xl mb-4"><i class="fas fa-tshirt"></i></div>
+                    <h4 class="text-xl font-bold">RAPI</h4>
+                    <p class="text-gray-600 mt-2">Pakaian Anda yang kami serahkan sudah pastinya rapi dan anti gosong karena kami menggunakan setrika uap boiler yang terbukti aman.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md text-center service-card">
+                    <div class="text-primary text-5xl mb-4"><i class="fas fa-tshirt"></i></div>
+                    <h4 class="text-xl font-bold">WANGI</h4>
+                    <p class="text-gray-600 mt-2">Laundry Anda akan wangi sepanjang hari dengan parfum laundry berkualitas grade A bibit impor dari Eropa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary-dark">Layanan Laundry Banyumas</h2>
+                <p class="text-gray-600 mt-2">Kami menawarkan jasa laundry dengan berbagai layanan unggulan kami</p>
+            </div>
+
+            <div class="space-y-12">
+                <!-- Service 1 -->
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="md:w-1/2">
+                        <img src="https://raw.githubusercontent.com/bandardeterjen/banyumas/refs/heads/images/services-img-1.jpg" alt="Laundry Satuan" class="rounded-lg shadow-lg w-full">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-bold text-primary-dark">Laundry Satuan</h3>
+                        <p class="text-gray-600 mt-2">Kami melayani jasa laundry satuan yang dihitung per biji. Pastinya laundry Anda mendapatkan perhatian penuh dan ditangani secara profesional bahkan sampai detail.</p>
+                        <ul class="mt-4 space-y-2 text-gray-700">
+                            <li><i class="fas fa-check-circle text-primary mr-2"></i> Harga per biji/satuan.</li>
+                            <li><i class="fas fa-check-circle text-primary mr-2"></i> Menangani noda.</li>
+                            <li><i class="fas fa-check-circle text-primary mr-2"></i> Dicuci secara terpisah.</li>
+                            <li><i class="fas fa-check-circle text-primary mr-2"></i> Menggunakan setrika uap.</li>
+                            <li><i class="fas fa-check-circle text-primary mr-2"></i> Menggunakan parfum premium grade A.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+                    <div class="md:w-1/2">
+                        <img src="https://raw.githubusercontent.com/bandardeterjen/banyumas/refs/heads/images/services-img-2.jpg" alt="Antar Jemput" class="rounded-lg shadow-lg w-full">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-bold text-primary-dark">Layanan Antar Jemput</h3>
+                        <p class="text-gray-600 mt-2">Kami melayani antar jemput gratis seantero Banyumas meliputi area Sokaraja, Purwokerto, Ajibarang, Baturaden, Cilongok, Gumelar, Kalibagor, Karanglewas, Kebasen, Kedung Banteng, Kembaran, Kemrinjen, Jatilawang, Lumbir, Patikraja, Pekuncen, Purwojati, Rawalo, Somagede, Sumbang, Sumpiuh, Tambak, dan Wangon</p>
+                        <ul class="mt-4 space-y-2 text-gray-700">
+                            <li><i class="fas fa-check-circle text-primary mr-2"></i> Antar jemput seluruh wilayah Banyumas.</li>
+                            <li><i class="fas fa-check-circle text-primary mr-2"></i> Gratis ongkos kirim untuk jarak tertentu.</li>
+                            <li><i class="fas fa-check-circle text-primary mr-2"></i> Minimum order 5 kg.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="md:w-1/2">
+                        <img src="https://raw.githubusercontent.com/bandardeterjen/banyumas/refs/heads/images/services-img-3.jpg" alt="Laundry Ekspres" class="rounded-lg shadow-lg w-full">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-bold text-primary-dark">Laundry Ekspres</h3>
+                        <p class="text-gray-600 mt-2">Kami juga melayani laundry ekspres/kilat untuk esok hari atau 2 jam selesai bisa ditunggu</p>
+                        <ul class="mt-4 space-y-2 text-gray-700">
+                            <li><i class="fas fa-check-circle text-primary mr-2"></i> Bisa diantar jemput.</li>
+                            <li><i class="fas fa-check-circle text-primary mr-2"></i> Minimal order 5 kg.</li>
+                            <li><i class="fas fa-check-circle text-primary mr-2"></i> Gratis ongkos kirim area tertentu.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+                    <div class="md:w-1/2">
+                        <img src="https://raw.githubusercontent.com/bandardeterjen/banyumas/refs/heads/images/services-img-4.jpg" alt="Cuci Gosok" class="rounded-lg shadow-lg w-full">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-bold text-primary-dark">Cuci Gosok</h3>
+                        <p class="text-gray-600 mt-2">Kami juga melayani jasa cuci lipat atau gosok saja dengan tarif pastinya lebih murah</p>
+                        <ul class="mt-4 space-y-2 text-gray-700">
+                            <li><i class="fas fa-check-circle text-primary mr-2"></i> Tarif lebih murah.</li>
+                            <li><i class="fas fa-check-circle text-primary mr-2"></i> Bisa antar jemput.</li>
+                            <li><i class="fas fa-check-circle text-primary mr-2"></i> Bisa bayar di tempat.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary-dark">Daftar Harga Laundry Satuan</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto mt-2">Berikut adalah daftar harga laundry satuan yang berlaku untuk area Sokaraja, Purwokerto, Ajibarang, Baturaden, Cilongok, Gumelar, Kalibagor, Karanglewas, Kebasen, Kedung Banteng, Kembaran, Kemrinjen, Jatilawang, Lumbir, Patikraja, Pekuncen, Purwojati, Rawalo, Somagede, Sumbang, Sumpiuh, Tambak, dan Wangon.</p>
+            </div>
+
+            <!-- Price Table (Simplified for Demo) -->
+            <div class="overflow-x-auto shadow-md rounded-lg bg-white">
+                <table class="price-table">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Item Huruf A</th>
+                            <th>Harga</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Alas box bayi</td><td>Rp 35.000</td></tr>
+                        <tr><td>2</td><td>Alas kasur springbed</td><td>Rp 21.000</td></tr>
+                        <tr><td>3</td><td>Alas Keranjang bayi</td><td>Rp 17.000</td></tr>
+                        <tr><td>4</td><td>Alas piring meja makan</td><td>Rp 5.000</td></tr>
+                        <tr><td>5</td><td>Alas sofa</td><td>Rp 9.500</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-center mt-6 text-gray-600">Kalau tidak ada laundry Anda yang tidak terdaftar di sini, silahkan <a href="#contact" class="text-primary font-bold hover:underline">kontak kami</a> dan kami akan menambah item tersebut.</p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary-dark">Pertanyaan Yang Sering Diajukan</h2>
+                <p class="text-gray-600 mt-2">Cara Order Laundry</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
+                <div class="text-center bg-white p-6 rounded-lg shadow">
+                    <div class="text-4xl text-primary mb-4"><i class="fab fa-whatsapp"></i></div>
+                    <h4 class="font-bold">Hubungi Kami</h4>
+                    <p class="text-gray-600 text-sm mt-2">Hubungi kami melalui whatsapp atau telpon, kurir akan segera datang untuk jemput cucian kotor Anda.</p>
+                </div>
+                <div class="text-center bg-white p-6 rounded-lg shadow">
+                    <div class="text-4xl text-primary mb-4"><i class="fas fa-list"></i></div>
+                    <h4 class="font-bold">Pilih Paket</h4>
+                    <p class="text-gray-600 text-sm mt-2">Pas pengantaran ke outlet atau penjemputan, silahkan deskripsikan laundry Anda. Masuk kiloan atau satuan.</p>
+                </div>
+                <div class="text-center bg-white p-6 rounded-lg shadow">
+                    <div class="text-4xl text-primary mb-4"><i class="fas fa-truck"></i></div>
+                    <h4 class="font-bold">Antar Jemput</h4>
+                    <p class="text-gray-600 text-sm mt-2">Kami sediakan layanan antar jemput gratis untuk wilayah dan jarak tertentu.</p>
+                </div>
+                <div class="text-center bg-white p-6 rounded-lg shadow">
+                    <div class="text-4xl text-primary mb-4"><i class="fas fa-money-bill"></i></div>
+                    <h4 class="font-bold">Bayar Di Tempat</h4>
+                    <p class="text-gray-600 text-sm mt-2">Anda bisa pilih bayar di tempat sewaktu laundry selesai atau bisa juga transfer.</p>
+                </div>
+            </div>
+
+            <!-- FAQ Accordion -->
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="bg-white rounded-lg shadow border border-gray-200">
+                    <div class="faq-question flex justify-between items-center p-4 font-semibold text-gray-800" onclick="toggleFaq(this)">
+                        <span>Apakah ada layanan antar jemput?</span>
+                        <i class="fas fa-chevron-down text-primary"></i>
+                    </div>
+                    <div class="faq-answer text-gray-600">
+                        <p>Ya ada layanan antar jemput untuk laundry wilayah area Sokaraja, Purwokerto, Ajibarang, Baturaden, Cilongok, Gumelar, Kalibagor, Karanglewas, Kebasen, Kedung Banteng, Kembaran, Kemrinjen, Jatilawang, Lumbir, Patikraja, Pekuncen, Purwojati, Rawalo, Somagede, Sumbang, Sumpiuh, Tambak, dan Wangon.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow border border-gray-200">
+                    <div class="faq-question flex justify-between items-center p-4 font-semibold text-gray-800" onclick="toggleFaq(this)">
+                        <span>Apakah ada laundry paket bulanan?</span>
+                        <i class="fas fa-chevron-down text-primary"></i>
+                    </div>
+                    <div class="faq-answer text-gray-600">
+                        <p>Ada bos. kami menyediakan paket bulanan untuk cuci gosok atau setrika saja. pastinya harga lebih murah.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow border border-gray-200">
+                    <div class="faq-question flex justify-between items-center p-4 font-semibold text-gray-800" onclick="toggleFaq(this)">
+                        <span>Selain jasa laundry, jual apa saja?</span>
+                        <i class="fas fa-chevron-down text-primary"></i>
+                    </div>
+                    <div class="faq-answer text-gray-600">
+                        <p>Kami menjual produk pembersih laundry dan rumah tangga seperti sabun/deterjen, parfum, softener pelembut pakaian, anti noda laundry, karbol, pembersih pel lantai, pembersih kaca, dsb. Pokonya banyak!</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow border border-gray-200">
+                    <div class="faq-question flex justify-between items-center p-4 font-semibold text-gray-800" onclick="toggleFaq(this)">
+                        <span>Apakah laundry bisa diantar besok?</span>
+                        <i class="fas fa-chevron-down text-primary"></i>
+                    </div>
+                    <div class="faq-answer text-gray-600">
+                        <p>Bisa. Sebaiknya dijelaskan dulu dari awal sewaktu menyerahkan pakaian kotor. Mau selesai kapan dan pastikan ditulis di nota.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow border border-gray-200">
+                    <div class="faq-question flex justify-between items-center p-4 font-semibold text-gray-800" onclick="toggleFaq(this)">
+                        <span>Siapa nanti yang jemput dan antar laundry, apakah orang yang sama?</span>
+                        <i class="fas fa-chevron-down text-primary"></i>
+                    </div>
+                    <div class="faq-answer text-gray-600">
+                        <p>Belum tentu orang yang sama. Pastikan menunjukkan nota asli agar kami tidak salah orang.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary-dark">Kontak kami</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Contact Form -->
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <form action="mailto:bandardeterjen@gmail.com" method="post" enctype="text/plain" class="space-y-4">
+                        <div>
+                            <input type="text" name="name" placeholder="Enter Name *" required class="w-full border border-gray-300 p-3 rounded focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition">
+                        </div>
+                        <div>
+                            <input type="email" name="email" placeholder="Enter Email *" required class="w-full border border-gray-300 p-3 rounded focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition">
+                        </div>
+                        <div>
+                            <input type="text" name="phone" placeholder="Enter Phone Number *" required class="w-full border border-gray-300 p-3 rounded focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition">
+                        </div>
+                        <div>
+                            <input type="text" name="address" placeholder="Enter Address *" required class="w-full border border-gray-300 p-3 rounded focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition">
+                        </div>
+                        <div>
+                            <input type="text" name="city" placeholder="Enter City *" required class="w-full border border-gray-300 p-3 rounded focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition">
+                        </div>
+                        <div>
+                            <input type="text" name="zip" placeholder="Enter Zip *" required class="w-full border border-gray-300 p-3 rounded focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition">
+                        </div>
+                        <div>
+                            <textarea name="message" rows="5" placeholder="Enter Your Message *" required class="w-full border border-gray-300 p-3 rounded focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary text-white font-bold py-3 rounded hover:bg-yellow-400 transition duration-300">SEND A MESSAGE</button>
+                    </form>
+                </div>
+                <!-- Map & Info -->
+                <div class="space-y-6">
+                    <div class="bg-white p-4 rounded-lg shadow overflow-hidden">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.0591587792424!2d109.28823247425149!3d-7.4587078735142125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655b8c7ce996bf%3A0x9bd7406ba0c31346!2sJl.%20Pejagalan%20Kulon%20No.50%2C%20Dusun%20II%20Sokaraja%20Tengah%2C%20Sokaraja%20Tengah%2C%20Kec.%20Sokaraja%2C%20Kabupaten%20Banyumas%2C%20Jawa%20Tengah%2053181!5e0!3m2!1sen!2sid!4v1739601149517!5m2!1sen!2sid" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <h4 class="font-bold text-primary-dark">Jam Kerja</h4>
+                        <p class="text-gray-600">Senin - Sabtu 08.00 - 17.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Area Layanan -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-4">Area Layanan</h4>
+                    <p class="text-sm leading-relaxed" id="area-layanan-list">
+                        <span class="area-link text-white hover:text-yellow-300" data-area="sokaraja">Laundry Sokaraja</span>,
+                        <span class="area-link text-white hover:text-yellow-300" data-area="banyumas">Laundry Banyumas</span>,
+                        <span class="area-link text-white hover:text-yellow-300" data-area="purwokerto">Laundry Purwokerto</span>,
+                        <span class="area-link text-white hover:text-yellow-300" data-area="ajibarang">Laundry Ajibarang</span>,
+                        <span class="area-link text-white hover:text-yellow-300" data-area="baturaden">Laundry Baturaden</span>,
+                        <span class="area-link text-white hover:text-yellow-300" data-area="cilongok">Laundry Cilongok</span>,
+                        <span class="area-link text-white hover:text-yellow-300" data-area="gumelar">Laundry Gumelar</span>,
+                        <span class="area-link text-white hover:text-yellow-300" data-area="kalibagor">Laundry Kalibagor</span>,
+                        <span class="area-link text-white hover:text-yellow-300" data-area="karanglewas">Laundry Karanglewas</span>,
+                        <span class="area-link text-white hover:text-yellow-300" data-area="kebasen">Laundry Kebasen</span>,
+                        <span class="area-link text-white hover:text-yellow-300" data-area="kedungbanteng">Laundry Kedung Banteng</span>,
+                        <span class="area-link text-white hover:text-yellow-300" data-area="kembaran">Laundry Kembaran</span>,
+                        <span class="area-link text-white hover:text-yellow-300" data-area="kemrinjen">Laundry Kemrinjen</span>,
+                        <span class="area-link text-white hover:text-yellow-300" data-area="jatilawang">Laundry Jatilawang</span>,
+                        <span class="area-link text-white hover:text-yellow-300" data-area="lumbir">Laundry Lumbir</span>,
+                        <span class="area-link text-white hover:text-yellow-300" data-area="patikraja">Laundry Patikraja</span>,
+                        <span class="area-link text-white hover:text-yellow-300" data-area="pekuncen">Laundry Pekuncen</span>,
+                        <span class="area-link text-white hover:text-yellow-300" data-area="purwojati">Laundry Purwojati</span>,
+                        <span class="area-link text-white hover:text-yellow-300" data-area="rawalo">Laundry Rawalo</span>,
+                        <span class="area-link text-white hover:text-yellow-300" data-area="somagede">Laundry Somagede</span>,
+                        <span class="area-link text-white hover:text-yellow-300" data-area="sumbang">Laundry Sumbang</span>,
+                        <span class="area-link text-white hover:text-yellow-300" data-area="sumpiuh">Laundry Sumpiuh</span>,
+                        <span class="area-link text-white hover:text-yellow-300" data-area="tambak">Laundry Tambak</span>,
+                        <span class="area-link text-white hover:text-yellow-300" data-area="wangon">Laundry Wangon</span>
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-4">Terhubung</h4>
+                    <div class="flex gap-4">
+                        <a href="https://www.facebook.com/bandardeterjen" target="_blank" class="bg-primary w-10 h-10 rounded-full flex items-center justify-center text-white hover:bg-yellow-400 transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/bandardeterjen" target="_blank" class="bg-primary w-10 h-10 rounded-full flex items-center justify-center text-white hover:bg-yellow-400 transition"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/bandardeterjen" target="_blank" class="bg-primary w-10 h-10 rounded-full flex items-center justify-center text-white hover:bg-yellow-400 transition"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-4">Jam Operasional</h4>
+                    <p>Senin - Sabtu<br>08.00 - 17.000<br><br>Gratis antar jemput</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-4">Kontak</h4>
+                    <div class="space-y-2">
+                        <div class="flex items-start gap-3">
+                            <i class="fab fa-whatsapp text-primary text-lg mt-1"></i>
+                            <div><span class="font-medium text-white">Whatsapp</span> : 085773009666</div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="far fa-envelope text-primary text-lg mt-1"></i>
+                            <div><span class="font-medium text-white">Email</span> : <a href="mailto:bandardeterjen@gmail.com" class="hover:text-white">bandardeterjen@gmail.com</a></div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-globe text-primary text-lg mt-1"></i>
+                            <div><span class="font-medium text-white">Website</span> : www.bandardeterjen.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 py-4 text-center text-sm">
+            &copy; Jasa Pembuatan Website Di Sokaraja dan Purwokerto 085773009666
+        </div>
+    </footer>
+
+    <!-- Area Layanan Modal -->
+    <div class="area-modal-overlay" id="areaModal">
+        <div class="area-modal">
+            <span class="close-btn" onclick="closeAreaModal()">&times;</span>
+            <h3 id="modal-area-title">Laundry Sokaraja</h3>
+            <img id="modal-area-image" class="area-image" src="" alt="Area Layanan">
+            <div id="modal-area-description" class="area-description">
+                <p>Deskripsi layanan laundry di area ini.</p>
+            </div>
+            <div class="area-contact">
+                <a href="https://wa.me/6285773009666" target="_blank"><i class="fab fa-whatsapp mr-2"></i> Hubungi via WA</a>
+                <a href="#contact"><i class="fas fa-phone mr-2"></i> Kontak Kami</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Floater -->
+    <div class="wa-floater">
+        <div id="wa-panel" class="wa-panel">
+            <div class="bg-green-600 p-4 text-white flex justify-between items-center">
+                <div class="flex items-center gap-3">
+                    <i class="fab fa-whatsapp text-2xl"></i>
+                    <div>
+                        <h3 class="font-bold text-sm">Hubungi Kami via WA</h3>
+                        <p class="text-xs text-green-100">Respon cepat & ramah</p>
+                    </div>
+                </div>
+                <button onclick="toggleWaWidget()" class="text-white hover:text-gray-200 text-base p-1 outline-none"><i class="fas fa-times"></i></button>
+            </div>
+            <form id="wa-form" class="p-4 space-y-3 text-sm text-gray-700">
+                <div>
+                    <label class="block font-medium mb-1">Nama Lengkap</label>
+                    <input type="text" id="wa-nama" required class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 outline-none">
+                </div>
+                <div>
+                    <label class="block font-medium mb-1">Nomor WhatsApp</label>
+                    <input type="tel" id="wa-wa" placeholder="Contoh: 08123..." required class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 outline-none">
+                </div>
+                <div>
+                    <label class="block font-medium mb-1">Alamat Email</label>
+                    <input type="email" id="wa-email" required class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 outline-none">
+                </div>
+                <div>
+                    <label class="block font-medium mb-1">Lokasi</label>
+                    <select id="wa-lokasi" required class="w-full px-3 py-2 border rounded-lg bg-white focus:ring-2 focus:ring-green-500 outline-none">
+                        <option value="">-- Pilih Lokasi --</option>
+                        <option value="Sokaraja">Sokaraja</option>
+                        <option value="Purwokerto">Purwokerto</option>
+                        <option value="Ajibarang">Ajibarang</option>
+                        <option value="Baturaden">Baturaden</option>
+                        <option value="Cilongok">Cilongok</option>
+                        <option value="Gumelar">Gumelar</option>
+                        <option value="Kalibagor">Kalibagor</option>
+                        <option value="Karanglewas">Karanglewas</option>
+                        <option value="Kebasen">Kebasen</option>
+                        <option value="Kedung Banteng">Kedung Banteng</option>
+                        <option value="Kembaran">Kembaran</option>
+                        <option value="Kemrinjen">Kemrinjen</option>
+                        <option value="Jatilawang">Jatilawang</option>
+                        <option value="Lumbir">Lumbir</option>
+                        <option value="Patikraja">Patikraja</option>
+                        <option value="Pekuncen">Pekuncen</option>
+                        <option value="Purwojati">Purwojati</option>
+                        <option value="Rawalo">Rawalo</option>
+                        <option value="Somagede">Somagede</option>
+                        <option value="Sumbang">Sumbang</option>
+                        <option value="Sumpiuh">Sumpiuh</option>
+                        <option value="Tambak">Tambak</option>
+                        <option value="Wangon">Wangon</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block font-medium mb-1">Alamat Lengkap</label>
+                    <textarea id="wa-alamat" rows="2" required class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 outline-none"></textarea>
+                </div>
+                <button type="submit" id="wa-btn-kirim" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-2.5 rounded-lg shadow transition flex items-center justify-center gap-2">
+                    <i class="fas fa-paper-plane"></i> Kirim Pesan
+                </button>
+                <div class="text-center pt-2 border-t mt-2">
+                    <button type="button" onclick="bukaModalLogin()" class="text-xs text-gray-400 hover:text-blue-600 transition"><i class="fas fa-lock mr-1"></i> Area Admin Dashboard</button>
+                </div>
+            </form>
+        </div>
+        <button onclick="toggleWaWidget()" class="wa-btn">
+            <i class="fab fa-whatsapp"></i>
+        </button>
+    </div>
+
+    <!-- Admin Login Modal -->
+    <div id="login-modal" class="fixed inset-0 bg-black/50 z-[9999999] hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl shadow-2xl w-full max-w-sm overflow-hidden border">
+            <div class="bg-gray-800 text-white p-4 flex justify-between items-center">
+                <span class="font-bold text-sm"><i class="fas fa-user-shield mr-2"></i>Verifikasi Admin</span>
+                <button onclick="tutupModalLogin()" class="hover:text-gray-300"><i class="fas fa-times"></i></button>
+            </div>
+            <form id="login-form" class="p-5 space-y-4 text-sm">
+                <div>
+                    <label class="block text-gray-600 font-medium mb-1">Username / Email</label>
+                    <input type="text" id="adm-user" required class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-gray-800 outline-none">
+                </div>
+                <div>
+                    <label class="block text-gray-600 font-medium mb-1">Password</label>
+                    <input type="password" id="adm-pass" required class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-gray-800 outline-none">
+                </div>
+                <button type="submit" class="w-full bg-gray-800 hover:bg-gray-900 text-white font-bold py-2.5 rounded-lg transition shadow">Masuk</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Dashboard (Hidden by default) -->
+    <div id="dashboard" class="fixed inset-0 bg-slate-100 z-[99999999] hidden flex flex-col h-full w-full font-sans text-sm">
+        <header class="bg-slate-900 text-white shrink-0 shadow-md">
+            <div class="px-4 py-3 bg-slate-950 flex justify-between items-center">
+                <span class="font-bold text-sm flex items-center gap-2"><i class="fas fa-shield-halved text-emerald-400"></i> Dashboard Admin</span>
+                <button onclick="logoutDashboard()" class="text-red-400 hover:text-red-300 font-bold text-xs flex items-center gap-1"><i class="fas fa-sign-out-alt"></i> Keluar</button>
+            </div>
+            <nav class="flex border-t border-slate-800 text-xs md:text-sm">
+                <button onclick="switchTab('pesan')" id="menu-pesan" class="flex-1 text-center py-3 font-semibold border-b-2 border-emerald-500 bg-slate-800 text-white">Pesan</button>
+                <button onclick="switchTab('kontak')" id="menu-kontak" class="flex-1 text-center py-3 font-semibold border-b-2 border-transparent text-slate-400 hover:text-white">Admin</button>
+                <button onclick="switchTab('user')" id="menu-user" class="flex-1 text-center py-3 font-semibold border-b-2 border-transparent text-slate-400 hover:text-white">User</button>
+            </nav>
+        </header>
+        <main class="flex-1 overflow-y-auto p-3 md:p-6 custom-scroll">
+            <div id="tab-content-pesan" class="space-y-3 dashboard-tab">
+                <div id="dash-cards-pesan" class="grid grid-cols-1 gap-3">Belum ada pesan masuk</div>
+                <div class="bg-white p-4 rounded-xl border flex justify-between items-center text-xs shadow-sm">
+                    <span class="text-slate-500" id="page-info">Halaman 1</span>
+                    <div class="flex items-center gap-1" id="pagination-buttons"></div>
+                </div>
+            </div>
+            <div id="tab-content-kontak" class="hidden space-y-4 dashboard-tab">
+                <div class="bg-white p-4 rounded-xl border shadow-sm space-y-3 text-xs">
+                    <input type="hidden" id="crud-id">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div>
+                            <label class="block font-bold mb-1">Nama Lokasi</label>
+                            <input type="text" id="crud-lokasi" placeholder="Misal: Sunter" class="w-full px-3 py-2 border rounded-lg outline-none">
+                        </div>
+                        <div>
+                            <label class="block font-bold mb-1">WA Admin (Contoh: 62888...)</label>
+                            <input type="text" id="crud-wa" placeholder="62888..." class="w-full px-3 py-2 border rounded-lg outline-none">
+                        </div>
+                        <div>
+                            <label class="block font-bold mb-1">Urutan Posisi (Angka)</label>
+                            <input type="number" id="crud-urutan" value="1" min="1" class="w-full px-3 py-2 border rounded-lg outline-none">
+                        </div>
+                        <div>
+                            <label class="block font-bold mb-1">Target Web URL (Gunakan koma jika banyak)</label>
+                            <input type="text" id="crud-urls" placeholder="www.bandarlaundry.com, github.io" class="w-full px-3 py-2 border rounded-lg outline-none">
+                        </div>
+                    </div>
+                    <div class="flex gap-2 justify-end pt-2 border-t">
+                        <button onclick="resetCrudForm()" class="bg-slate-200 text-slate-700 font-bold px-4 py-2 rounded-lg">Reset</button>
+                        <button onclick="saveCrudKontak()" id="btn-save-crud" class="bg-blue-600 text-white font-bold px-5 py-2 rounded-lg shadow">Simpan</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm border overflow-hidden">
+                    <div class="overflow-x-auto custom-scroll">
+                        <table class="w-full text-left border-collapse text-xs text-slate-600" id="dash-table-kontak"></table>
+                    </div>
+                </div>
+            </div>
+            <div id="tab-content-user" class="bg-white rounded-xl shadow-sm border overflow-hidden hidden dashboard-tab">
+                <div class="overflow-x-auto custom-scroll">
+                    <table class="w-full text-left border-collapse text-xs md:text-sm text-slate-600" id="dash-table-user"></table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Loader
+        window.addEventListener('load', function() {
+            document.getElementById('loader-wrapper').style.display = 'none';
+        });
+
+        // Mobile Menu Toggle
+        document.getElementById('nav-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Greeting
+        function setGreeting() {
+            const h = new Date().getHours();
+            let msg = '';
+            if (h >= 3 && h < 12) msg = 'Selamat pagi,';
+            else if (h >= 12 && h < 18) msg = 'Selamat siang,';
+            else if (h >= 18 && h < 24) msg = 'Selamat malam,';
+            else msg = 'Selamat dinihari,';
+            document.getElementById('greeting-message').innerHTML = msg + ' bisa dibantu?';
+        }
+        setGreeting();
+
+        // FAQ Toggle
+        function toggleFaq(el) {
+            const answer = el.nextElementSibling;
+            const isOpen = answer.classList.contains('open');
+            // Close all others
+            document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+            document.querySelectorAll('.faq-question').forEach(q => q.classList.remove('active'));
+            if (!isOpen) {
+                answer.classList.add('open');
+                el.classList.add('active');
+            }
+        }
+
+        // ========================
+        // AREA LAYANAN MODAL
+        // ========================
+        const areaData = {
+            sokaraja: {
+                title: 'Laundry Sokaraja',
+                image: 'https://raw.githubusercontent.com/bandardeterjen/banyumas/refs/heads/images/bd-banyumas-sokaraja.jpg',
+                description: `
+                    <p><strong>Laundry Kiloan dan Satuan di Sokaraja, Banyumas</strong></p>
+                    <p>Kami melayani jasa laundry kiloan dan satuan di seluruh wilayah Sokaraja dengan hasil bersih, rapi, dan wangi. Layanan antar jemput gratis tersedia untuk memudahkan Anda.</p>
+                    <p><strong>Layanan:</strong> Laundry kiloan, laundry satuan, cuci gosok, antar jemput gratis.</p>
+                    <p><strong>Area mencakup:</strong> Banjaranyar, Banjarsari Kidul, Jompo Kulon, Kalikidang, Karangduren, Karangkedawung, Karangnanas, Karangrau, Kedondong, Klahang, Lemberang, Pamijen, Sokaraja Kidul, Sokaraja Kulon, Sokaraja Lor, Sokaraja Tengah, Sokaraja Wetan, Wiradadi.</p>
+                `
+            },
+            banyumas: {
+                title: 'Laundry Banyumas',
+                image: 'https://raw.githubusercontent.com/bandardeterjen/banyumas/refs/heads/images/bd-banyumas-banyumas.jpg',
+                description: `
+                    <p><strong>Laundry Kiloan dan Satuan di Banyumas</strong></p>
+                    <p>Layanan laundry profesional untuk seluruh wilayah Kabupaten Banyumas. Kami memberikan hasil cucian yang bersih, rapi, dan wangi dengan deterjen ramah lingkungan.</p>
+                    <p><strong>Layanan:</strong> Laundry kiloan, laundry satuan, laundry karpet, kasur, sepatu, boneka.</p>
+                `
+            },
+            purwokerto: {
+                title: 'Laundry Purwokerto',
+                image: 'https://raw.githubusercontent.com/bandardeterjen/banyumas/refs/heads/images/bd-banyumas-purwokerto.jpg',
+                description: `
+                    <p><strong>Laundry Kiloan dan Satuan di Purwokerto</strong></p>
+                    <p>Melayani seluruh area Purwokerto Barat, Timur, Utara, dan Selatan. Kami siap menjemput dan mengantar pakaian Anda dengan gratis.</p>
+                    <p><strong>Layanan:</strong> Laundry kiloan, laundry satuan, laundry ekspres, cuci gosok.</p>
+                    <p><strong>Area mencakup:</strong> Purwokerto Barat, Purwokerto Timur, Purwokerto Utara, Purwokerto Selatan.</p>
+                `
+            },
+            ajibarang: {
+                title: 'Laundry Ajibarang',
+                image: 'https://raw.githubusercontent.com/bandardeterjen/banyumas/refs/heads/images/bd-banyumas-ajibarang.jpg',
+                description: `
+                    <p><strong>Laundry Kiloan dan Satuan di Ajibarang</strong></p>
+                    <p>Layanan laundry profesional di Ajibarang dengan hasil bersih, rapi, dan wangi. Kami melayani laundry kiloan dan satuan untuk pakaian sehari-hari maupun barang khusus.</p>
+                    <p><strong>Layanan:</strong> Laundry kiloan, laundry satuan, antar jemput gratis.</p>
+                `
+            },
+            baturaden: {
+                title: 'Laundry Baturaden',
+                image: 'https://raw.githubusercontent.com/bandardeterjen/banyumas/refs/heads/images/bd-banyumas-baturaden.jpg',
+                description: `
+                    <p><strong>Layanan Laundry Kiloan dan Satuan di Baturaden</strong></p>
+                    <p>Pilihan tepat untuk hotel dan wisatawan di Baturaden. Kami melayani laundry dengan kapasitas besar dan hasil berkualitas.</p>
+                    <p><strong>Layanan:</strong> Laundry hotel, laundry wisatawan, kiloan, satuan.</p>
+                `
+            },
+            cilongok: {
+                title: 'Laundry Cilongok',
+                image: 'https://raw.githubusercontent.com/bandardeterjen/banyumas/refs/heads/images/bd-banyumas-cilongok.jpg',
+                description: `
+                    <p><strong>Jasa Laundry Kiloan dan Satuan di Cilongok</strong></p>
+                    <p>Layanan laundry berkualitas di Cilongok dengan harga kompetitif dan proses higienis. Free delivery untuk kenyamanan Anda.</p>
+                    <p><strong>Layanan:</strong> Laundry kiloan, laundry satuan, free delivery.</p>
+                `
+            },
+            gumelar: {
+                title: 'Laundry Gumelar',
+                image: 'https://raw.githubusercontent.com/bandardeterjen/banyumas/refs/heads/images/bd-banyumas-gumelar.jpg',
+                description: `
+                    <p><strong>Jasa Laundry Kiloan dan Satuan di Gumelar</strong></p>
+                    <p>Solusi laundry praktis untuk warga Gumelar. Hasil bersih, rapi, dan wangi dengan layanan antar jemput gratis.</p>
+                `
+            },
+            kalibagor: {
+                title: 'Laundry Kalibagor',
+                image: 'https://raw.githubusercontent.com/bandardeterjen/banyumas/refs/heads/images/bd-banyumas-kalibagor.jpg',
+                description: `
+                    <p><strong>Jasa Laundry Kiloan dan Satuan di Kalibagor</strong></p>
+                    <p>Layanan laundry lengkap di Kalibagor untuk pakaian, karpet, sepatu, boneka, hingga kasur dan springbed.</p>
+                    <p><strong>Area mencakup:</strong> Kalicupak Kidul, Kalicupak Lor, Kaliori, Kalisogra Wetan, Karangdadap, Pajerukan, Pekaja, Petir, Srowot, Suro, Wlahar Wetan.</p>
+                `
+            },
+            karanglewas: {
+                title: 'Laundry Karanglewas',
+                image: 'https://raw.githubusercontent.com/bandardeterjen/banyumas/refs/heads/images/bd-banyumas-karanglewas.jpg',
+                description: `
+                    <p><strong>Laundry Kiloan dan Satuan di Karanglewas</strong></p>
+                    <p>Solusi praktis untuk kebutuhan laundry Anda di Karanglewas dengan free delivery dan hasil cucian bersih & wangi.</p>
+                `
+            },
+            kebasen: {
+                title: 'Laundry Kebasen',
+                image: 'https://raw.githubusercontent.com/bandardeterjen/banyumas/refs/heads/images/bd-banyumas-kebasen.jpg',
+                description: `
+                    <p><strong>Jasa Laundry Kiloan di Kebasen</strong></p>
+                    <p>Solusi cuci praktis dan hemat waktu untuk warga Kebasen. Hasil cucian bersih, rapi, dan wangi dengan harga terjangkau.</p>
+                `
+            },
+            kedungbanteng: {
+                title: 'Laundry Kedung Banteng',
+                image: 'https://raw.githubusercontent.com/bandardeterjen/banyumas/refs/heads/images/bd-banyumas-kedungbanteng.jpg',
+                description: `
+                    <p><strong>Jasa Laundry Kiloan dan Satuan di Kedungbanteng</strong></p>
+                    <p>Solusi praktis bagi masyarakat modern di Kedungbanteng dengan layanan antar jemput gratis dan hasil cucian berkualitas.</p>
+                `
+            },
+            kembaran: {
+                title: 'Laundry Kembaran',
+                image: 'https://raw.githubusercontent.com/bandardeterjen/banyumas/refs/heads/images/bd-banyumas-kembaran.jpg',
+                description: `
+                    <p><strong>Jasa Laundry Kiloan dan Satuan di Kembaran</strong></p>
+                    <p>Solusi praktis untuk pakaian bersih dan wangi di Kembaran. Layanan antar jemput gratis dan harga terjangkau.</p>
+                `
+            },
+            kemrinjen: {
+                title: 'Laundry Kemrinjen',
+                image: 'https://raw.githubusercontent.com/bandardeterjen/banyumas/refs/heads/images/bd-banyumas-kemrinjen.jpg',
+                description: `
+                    <p><strong>Jasa Laundry Kiloan dan Satuan di Kemrinjen</strong></p>
+                    <p>Solusi praktis untuk kebutuhan laundry Anda di Kemrinjen dengan hasil bersih, rapi, dan wangi.</p>
+                `
+            },
+            jatilawang: {
+                title: 'Laundry Jatilawang',
+                image: 'https://raw.githubusercontent.com/bandardeterjen/banyumas/refs/heads/images/bd-banyumas-jatilawang.jpg',
+                description: `
+                    <p><strong>Jasa Laundry Kiloan dan Satuan di Jatilawang</strong></p>
+                    <p>Laundry praktis di Jatilawang dengan hasil bersih, rapi, dan wangi. Layanan antar jemput gratis untuk kemudahan Anda.</p>
+                `
+            },
+            lumbir: {
+                title: 'Laundry Lumbir',
+                image: 'https://raw.githubusercontent.com/bandardeterjen/banyumas/refs/heads/images/bd-banyumas-lumbir.jpg',
+                description: `
+                    <p><strong>Jasa Laundry Kiloan di Lumbir</strong></p>
+                    <p>Solusi praktis untuk kebersihan pakaian Anda di Lumbir dengan layanan antar jemput gratis dan hasil memuaskan.</p>
+                `
+            },
+            patikraja: {
+                title: 'Laundry Patikraja',
+                image: 'https://raw.githubusercontent.com/bandardeterjen/banyumas/refs/heads/images/bd-banyumas-patikraja.jpg',
+                description: `
+                    <p><strong>Jasa Laundry Kiloan di Patikraja</strong></p>
+                    <p>Layanan laundry praktis dan efisien di Patikraja dengan hasil bersih, wangi, dan rapi. Antar jemput gratis.</p>
+                `
+            },
+            pekuncen: {
+                title: 'Laundry Pekuncen',
+                image: 'https://raw.githubusercontent.com/bandardeterjen/banyumas/refs/heads/images/bd-banyumas-pekuncen.jpg',
+                description: `
+                    <p><strong>Jasa Laundry Kiloan dan Satuan di Pekuncen</strong></p>
+                    <p>Kisah tentang laundry kiloan yang tak terlupakan di Pekuncen. Layanan dengan hasil bersih, rapi, dan wangi.</p>
+                `
+            },
+            purwojati: {
+                title: 'Laundry Purwojati',
+                image: 'https://raw.githubusercontent.com/bandardeterjen/banyumas/refs/heads/images/bd-banyumas-purwojati.jpg',
+                description: `
+                    <p><strong>Jasa Laundry Kiloan dan Satuan di Purwojati</strong></p>
+                    <p>Kisah cinta yang bersih, rapi, dan wangi di Purwojati. Layanan laundry dengan hasil memuaskan.</p>
+                `
+            },
+            rawalo: {
+                title: 'Laundry Rawalo',
+                image: 'https://raw.githubusercontent.com/bandardeterjen/banyumas/refs/heads/images/bd-banyumas-rawalo.jpg',
+                description: `
+                    <p><strong>Jasa Laundry Kiloan di Rawalo</strong></p>
+                    <p>Menemukan mutiara di Rawalo: jasa laundry kiloan yang membuat hidup lebih mudah dengan pelayanan baik dan harga terjangkau.</p>
+                `
+            },
+            somagede: {
+                title: 'Laundry Somagede',
+                image: 'https://raw.githubusercontent.com/bandardeterjen/banyumas/refs/heads/images/bd-banyumas-somagede.jpg',
+                description: `
+                    <p><strong>Kisah Cucian Kiloan Somagede</strong></p>
+                    <p>Ketika hidup tak lagi kusut masai dengan laundry kiloan Somagede. Solusi cerdas untuk hidup modern.</p>
+                `
+            },
+            sumbang: {
+                title: 'Laundry Sumbang',
+                image: 'https://raw.githubusercontent.com/bandardeterjen/banyumas/refs/heads/images/bd-banyumas-sumbang.jpg',
+                description: `
+                    <p><strong>Laundry Kiloan di Sumbang</strong></p>
+                    <p>Solusi cuci pakaian yang praktis dan berkualitas di Sumbang dengan layanan antar jemput gratis.</p>
+                `
+            },
+            sumpiuh: {
+                title: 'Laundry Sumpiuh',
+                image: 'https://raw.githubusercontent.com/bandardeterjen/banyumas/refs/heads/images/bd-banyumas-sumpiuh.jpg',
+                description: `
+                    <p><strong>Senja di Sumpiuh</strong></p>
+                    <p>Catatan harian si anak rantau tentang laundry kiloan Sumpiuh. Lebih dari sekadar cucian.</p>
+                `
+            },
+            tambak: {
+                title: 'Laundry Tambak',
+                image: 'https://raw.githubusercontent.com/bandardeterjen/banyumas/refs/heads/images/bd-banyumas-tambak.jpg',
+                description: `
+                    <p><strong>Laundry Kiloan di Tambak</strong></p>
+                    <p>Solusi cuci pakaian tanpa repot di Tambak dengan layanan antar jemput gratis dan hasil memuaskan.</p>
+                `
+            },
+            wangon: {
+                title: 'Laundry Wangon',
+                image: 'https://raw.githubusercontent.com/bandardeterjen/banyumas/refs/heads/images/bd-banyumas-wangon.jpg',
+                description: `
+                    <p><strong>Mengoptimalkan Waktu dengan Jasa Laundry Kiloan di Wangon</strong></p>
+                    <p>Solusi praktis mengelola waktu dan kebersihan pakaian di Wangon dengan layanan laundry profesional.</p>
+                `
+            }
+        };
+
+        // Default fallback data
+        const defaultArea = {
+            title: 'Laundry Banyumas',
+            image: 'https://raw.githubusercontent.com/bandardeterjen/banyumas/refs/heads/images/bd-banyumas-banyumas.jpg',
+            description: '<p>Layanan laundry kiloan dan satuan di wilayah Banyumas dengan hasil bersih, rapi, dan wangi. Gratis antar jemput.</p>'
+        };
+
+        // Event listener untuk semua area link
+        document.querySelectorAll('.area-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                const areaKey = this.dataset.area;
+                const data = areaData[areaKey] || defaultArea;
+                openAreaModal(data);
+            });
+        });
+
+        function openAreaModal(data) {
+            document.getElementById('modal-area-title').textContent = data.title;
+            document.getElementById('modal-area-image').src = data.image;
+            document.getElementById('modal-area-image').alt = data.title;
+            document.getElementById('modal-area-description').innerHTML = data.description;
+            document.getElementById('areaModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeAreaModal() {
+            document.getElementById('areaModal').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Close modal on overlay click
+        document.getElementById('areaModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeAreaModal();
+            }
+        });
+
+        // Close modal with ESC key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeAreaModal();
+            }
+        });
+
+        // WhatsApp Floater
+        function toggleWaWidget() {
+            const panel = document.getElementById('wa-panel');
+            panel.style.display = (panel.style.display === 'block') ? 'none' : 'block';
+        }
+
+        document.getElementById('wa-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const nama = document.getElementById('wa-nama').value;
+            const wa = document.getElementById('wa-wa').value;
+            const lokasi = document.getElementById('wa-lokasi').value;
+            const alamat = document.getElementById('wa-alamat').value;
+            const msg = `Halo kak, saya mau laundry\n\nNama: ${nama}\nLokasi: ${lokasi}\nAlamat: ${alamat}`;
+            const target = lokasi.toLowerCase() === 'sunter' ? '6288808181008' : '6285773009666';
+            const url = `https://api.whatsapp.com/send?phone=${target}&text=${encodeURIComponent(msg)}`;
+            window.open(url, '_blank');
+            this.reset();
+            toggleWaWidget();
+        });
+
+        // Admin Login/Dashboard (Simplified)
+        function bukaModalLogin() {
+            document.getElementById('login-modal').classList.remove('hidden');
+        }
+
+        function tutupModalLogin() {
+            document.getElementById('login-modal').classList.add('hidden');
+        }
+
+        document.getElementById('login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const user = document.getElementById('adm-user').value;
+            const pass = document.getElementById('adm-pass').value;
+            if (user === 'admin' && pass === 'admin') {
+                tutupModalLogin();
+                document.getElementById('dashboard').classList.remove('hidden');
+                document.getElementById('dash-cards-pesan').innerHTML = `
+                    <div class="bg-white p-4 rounded-xl border shadow-sm space-y-1.5 text-xs">
+                        <div class="font-bold text-sm text-slate-800 border-b pb-1 mb-2 flex justify-between items-center">
+                            <span><i class="fas fa-user text-slate-400 mr-1"></i> Andi</span>
+                            <span class="text-[10px] bg-green-100 text-green-700 px-2 py-0.5 rounded-full">Sokaraja</span>
+                        </div>
+                        <div class="flex flex-col sm:flex-row sm:justify-between text-slate-600"><span class="font-semibold text-slate-400">WA:</span><span class="break-all text-slate-700 mt-0.5 sm:mt-0">08123456789</span></div>
+                        <div class="flex flex-col sm:flex-row sm:justify-between text-slate-600"><span class="font-semibold text-slate-400">Email:</span><span class="break-all text-slate-700 mt-0.5 sm:mt-0">andi@email.com</span></div>
+                        <div class="flex flex-col sm:flex-row sm:justify-between text-slate-600"><span class="font-semibold text-slate-400">Alamat:</span><span class="break-all text-slate-700 mt-0.5 sm:mt-0">Jl. Contoh No. 1</span></div>
+                    </div>
+                `;
+                document.getElementById('dash-table-kontak').innerHTML = `
+                    <thead><tr class="bg-slate-200 border-b text-slate-800 font-bold text-xs">
+                        <th class="px-3 py-3 text-left whitespace-nowrap">Lokasi</th>
+                        <th class="px-3 py-3 text-left whitespace-nowrap">WA Admin</th>
+                        <th class="px-3 py-3 text-left whitespace-nowrap">Urutan</th>
+                        <th class="px-3 py-3 text-left whitespace-nowrap">Target URL</th>
+                        <th class="px-3 py-3 text-left whitespace-nowrap">Aksi</th>
+                    </tr></thead>
+                    <tbody>
+                        <tr class="border-b hover:bg-slate-50 text-xs"><td class="px-3 py-2.5 whitespace-nowrap">Sokaraja</td><td class="px-3 py-2.5 whitespace-nowrap">6285773009666</td><td class="px-3 py-2.5 whitespace-nowrap">1</td><td class="px-3 py-2.5 whitespace-nowrap">sokaraja.html</td><td class="px-3 py-2 text-center space-x-1 whitespace-nowrap"><button class="bg-amber-500 text-white font-bold px-2 py-1 rounded text-[10px]">Edit</button><button class="bg-rose-500 text-white font-bold px-2 py-1 rounded text-[10px]">Hapus</button></td></tr>
+                        <tr class="border-b hover:bg-slate-50 text-xs"><td class="px-3 py-2.5 whitespace-nowrap">Purwokerto</td><td class="px-3 py-2.5 whitespace-nowrap">6285773009666</td><td class="px-3 py-2.5 whitespace-nowrap">2</td><td class="px-3 py-2.5 whitespace-nowrap">purwokerto.html</td><td class="px-3 py-2 text-center space-x-1 whitespace-nowrap"><button class="bg-amber-500 text-white font-bold px-2 py-1 rounded text-[10px]">Edit</button><button class="bg-rose-500 text-white font-bold px-2 py-1 rounded text-[10px]">Hapus</button></td></tr>
+                    </tbody>
+                `;
+                document.getElementById('dash-table-user').innerHTML = `
+                    <thead><tr class="bg-slate-200 border-b text-slate-800 font-bold text-xs"><th class="px-3 py-3">Username / Email</th></tr></thead>
+                    <tbody><tr class="border-b hover:bg-slate-50 transition"><td class="px-3 py-2.5 font-medium text-slate-700">admin@bandardeterjen.com</td></tr></tbody>
+                `;
+            } else {
+                alert('Login gagal. Gunakan admin/admin');
+            }
+        });
+
+        function switchTab(tabName) {
+            document.querySelectorAll('.dashboard-tab').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('nav button').forEach(el => el.className = "flex-1 text-center py-3 font-semibold border-b-2 border-transparent text-slate-400 hover:text-white");
+            document.getElementById(`tab-content-${tabName}`).classList.remove('hidden');
+            document.getElementById(`menu-${tabName}`).className = "flex-1 text-center py-3 font-semibold border-b-2 border-emerald-500 bg-slate-800 text-white";
+        }
+
+        function logoutDashboard() {
+            document.getElementById('dashboard').classList.add('hidden');
+            document.getElementById('login-form').reset();
+        }
+
+        function resetCrudForm() {
+            document.getElementById('crud-id').value = '';
+            document.getElementById('crud-lokasi').value = '';
+            document.getElementById('crud-wa').value = '';
+            document.getElementById('crud-urutan').value = '1';
+            document.getElementById('crud-urls').value = '';
+            document.getElementById('btn-save-crud').innerText = 'Simpan';
+            document.getElementById('btn-save-crud').className = 'bg-blue-600 text-white font-bold px-5 py-2 rounded-lg shadow';
+        }
+
+        function saveCrudKontak() {
+            alert('Fungsi CRUD hanya simulasi. Data tidak benar-benar disimpan.');
+            resetCrudForm();
+        }
+
+        // Close mobile menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
